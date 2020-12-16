@@ -1,0 +1,13 @@
+/CV.pdf
+
+  <div id="ajaxContent"></div>
+  <script>
+  var Webflow = Webflow || [];
+  Webflow.push(function() {
+    $.get('https://cdn.rawgit.com/AmandaDPerez/Perez-CV/master/CV.pdf', function(data) {
+      $('#ajaxContent').append(data);
+    });
+  });
+  </script>
+  
+  
