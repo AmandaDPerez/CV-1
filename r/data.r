@@ -110,10 +110,7 @@ assistant <- tribble(
     "Graduate Student Instructor", "Psychology of Stigma & Prejudice Fall 2015", NA, NA, "Course on stigma & prejudice for undergraduate students. Instructor: Dr. Rodolfo Mendoza-Denton",
 )
 
-profdev <- tribble(
-  ~area, ~accomplishment,
-  "Intro to R", "\\href{www.google.com}{www.google.com}",
-)
+
 
 
 prep <- tribble(
@@ -166,3 +163,31 @@ Undergraduate Research,",
 Person Perception in Children. Talk given at the Southern California
 Conference on Undergraduate Research."
 )
+
+
+profdev <- tribble(
+  ~area, ~accomplishment,
+  "Introduction to SQL", "\\href{https://github.com/AmandaDPerez/perez-academic/blob/master/content/datacamp/sql_intro.pdf}{DataCamp Certificate}",
+  "Introduction to Relational Databases in SQL", "\\href{https://github.com/AmandaDPerez/perez-academic/blob/master/content/datacamp/sql_relational.pdf}{DataCamp Certificate}",
+  "Course Track: Shiny Fundamentals with R", "\\href{https://github.com/AmandaDPerez/perez-academic/blob/master/content/datacamp/track_shiny_fundamentals.pdf}{DataCamp Certificate}",
+  "Building Web Applications with Shiny in R", "\\href{https://github.com/AmandaDPerez/perez-academic/blob/master/content/datacamp/shiny_building_webapps.pdf}{DataCamp Certificate}",
+  "Case Studies: Building Web Applications with Shiny in R", "\\href{https://github.com/AmandaDPerez/perez-academic/blob/master/content/datacamp/shiny_case_study.pdf}{DataCamp Certificate}",
+  "Building Dashboards with flexdashboard", "\\href{https://github.com/AmandaDPerez/perez-academic/blob/master/content/datacamp/shiny_flexdashboard.pdf}{DataCamp Certificate}",
+  "Building Dashboards with shinydashboard", "\\href{https://github.com/AmandaDPerez/perez-academic/blob/master/content/datacamp/shinydashboard.pdf}{DataCamp Certificate}",
+  "Introduction to R", "\\href{https://github.com/AmandaDPerez/perez-academic/blob/master/content/datacamp/r_intro.pdf}{DataCamp Certificate}",
+  "Intermediate R", "\\href{https://github.com/AmandaDPerez/perez-academic/blob/master/content/datacamp/r_intermediate.pdf}{DataCamp Certificate}",
+  "Introduction to Importing Data in R", "\\href{https://github.com/AmandaDPerez/perez-academic/blob/master/content/datacamp/r_importing_intro.pdf}{DataCamp Certificate}",
+  "Intermediate Importing Data in R", "\\href{https://github.com/AmandaDPerez/perez-academic/blob/master/content/datacamp/r_importing_intermediate.pdf}{DataCamp Certificate}",
+  "Cleaning Data in R", "\\href{https://github.com/AmandaDPerez/perez-academic/blob/master/content/datacamp/r_cleaning.pdf}{DataCamp Certificate}",
+  "Introduction to Data in R", "\\href{https://github.com/AmandaDPerez/perez-academic/blob/master/content/datacamp/r_data_intro.pdf}{DataCamp Certificate}",
+  "Data Manipulation with dplyr", "\\href{https://github.com/AmandaDPerez/perez-academic/blob/master/content/datacamp/r_dplyr.pdf}{DataCamp Certificate}",
+  "Joining Data with dplyr", "\\href{https://github.com/AmandaDPerez/perez-academic/blob/master/content/datacamp/r_dplyr_joining.pdf}{DataCamp Certificate}",
+  "Introduction to the Tidyverse", "\\href{https://github.com/AmandaDPerez/perez-academic/blob/master/content/datacamp/r_tidyverse.pdf}{DataCamp Certificate}",
+  "Introduction to Data Visualization with ggplot2", "\\href{https://github.com/AmandaDPerez/perez-academic/blob/master/content/datacamp/r_intro_ggplot.pdf}{DataCamp Certificate}", 
+  "Longitudinal Analysis in R", "\\href{https://github.com/AmandaDPerez/perez-academic/blob/master/content/datacamp/r_longitudinal.pdf}{DataCamp Certificate}", 
+)
+
+
+
+
+
