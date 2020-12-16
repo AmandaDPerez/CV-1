@@ -1,102 +1,168 @@
-projects <- tribble(
-    ~area, ~accomplishment, ~year, ~where, ~detail,
-    "Lean Six Sigma Green Belt --- Reception Center Intake Process", "California Correctional Health Care Services", 2019, "Region 1 Quality Management", "Completed a Lean Six Sigma Green Belt project on the reception center medical screening process at San Quentin State Prison improving compliance from 2% and a baseline capability aggregate of 29.96% compliance to 84% during the transition phase of the project through application of the lean 6 methodologies and tools. Scope of project affects 6 total state prisons with 3 more to be positively impacted by state wide changes resulting from this project",
-    "Universal Data Scrubber", "California Correctional Health Care Services", 2018, "Region 1 Quality Management", "Creation of a Universal Data Scrubbing tool sent statewide to take most department SQL Report Server exports and turn them into raw data sets for Excel Analytics for end user staff"
-)
 
-certifications <- tribble(
-    ~area, ~accomplishment, ~year, ~where, ~detail,
-    "Certified Lean Six Sigma Green Belt", NA, "", "", NA,
-    "Certified Lean Six Sigma White Belt", NA, "", "", NA,
-    "Microsoft Software", "Various Applications", "", "", "Microsoft Excel - 112",
-    "Microsoft Software", "Various Applications", "", "", "Microsoft Word - 22",
-    "Microsoft Software", "Various Applications", "", "", "Microsoft Outlook - 21",
-    "Microsoft Software", "Various Applications", "", "", "Microsoft Power Point - 18",
-    "Microsoft Software", "Various Applications", "", "", "Share Point - 9",
-    "Microsoft Software", "Various Applications", "", "", "Microsoft Project - 6",
-    "Microsoft Software", "Various Applications", "", "", "Microsoft Access - 3",
-    "Microsoft Software", "Various Applications", "", "", "Microsoft Power BI - 3"
-)
 
 skills <- tribble(
     ~area, ~skills,
-    "Programming Languages", "BASH, CCL, DAX, JavaScript, Python, R, T-SQL, PL-SQL, VBA",
-    "Markup Languages", "CSS, HTML, LaTeX, Markdown, RMarkdown, SASS, Groff/Troff",
-    "Data Interchange Formats", "CSV, JSON, XML, Feather",
-    "Version Control", "GIT",
-    "Text Editors", "Discern Visual Developer, RStudio, SQL Server Management Studio, VIM, Visual Studio, Visual Studio Code",
-    "Microsoft Office", "Excel, Outlook, OneNote, PowerBI, PowerPoint, Visio, Word"
+    "Coding Languages", "R - Python - SPSS(Syntax) - Inquisit ",
+    "Markup Languages", " HTML, LaTeX, Markdown, RMarkdown, HTML, CSS",
+    "Data Interchange Formats", "CSV, JSON, XML",
+    "Version Control", "GIT"
+)
+
+workskills <- tribble(
+  ~area, ~skills,
+  "UC Berkeley School of Public Health (2020-Current).", "Researcher at the
+UC Berkeley School of Public Health's Health Effects Associated with Racism Threat (HEARTs) Research Group.",
+  "Recon Dynamics (2019-2020)", "Created dynamic markdown reports for clients, created markdown files that would query their API to grab real-time data, transform the data, and build relevant tables. These markdown files were able to provide clients with instant access to their product data 24/7.",
+  "Reciprocity ROI (2018-19)", "Psychometric consultant, UX/UI, curator of psychological literature, content creation, forum moderation.",
+  "Oakland Museum of California (2017)", "Curator of psychological
+literature, writing summaries of relevant psychological literature."
 )
 
 honors <- tribble(
-    ~area, ~accomplishment, ~year, ~where, ~detail,
-    "Phi Theta Kappa Academic Honor Society", "Granted to individuals in the 90th percentile of their graduating class", 2015, "Cosumnes River College",NA,
-    "Galt Community Character Coalition Honesty Award", "Awarded by the Galt City Council", 2010, "City Of Galt",NA
+    ~accomplishment,
+     "\\vspace{1mm}Graduate Research Instructor Innovation Fellow, 2020 \\linebreak{} \\vspace{1mm}
+     Outstanding Graduate Student Instructor Award, 2020 \\linebreak{} \\vspace{1mm}
+     National Science Foundation Graduate Research Fellowship, 2017 \\linebreak{} \\vspace{1mm}
+     Greater Good Science Center Research Fellowship, UC Berkeley, 2016 \\linebreak{} \\vspace{1mm}
+     Travel Award, Society for the Psychological Study of Societal Issues, 2016 \\linebreak{} \\vspace{1mm}
+     Travel Award, The Society of Multivariate Experimental Psychology, 2016 \\linebreak{} \\vspace{1mm}
+     Graduate Student Inclusivity Training and Certificate Program, 2016 \\linebreak{} \\vspace{1mm}
+     Pre-Doctoral Ford Foundation Fellowship Honorable Mention, 2016 \\linebreak{} \\vspace{1mm}
+     Chancellor's Graduate Fellowship, UC Berkeley, 2015 \\linebreak{} \\vspace{1mm}
+     Highest Honors in Psychology Thesis Designation, 2015 \\linebreak{} \\vspace{1mm}
+     Psychology Honors Program, UC Berkeley, 2014 \\linebreak{} \\vspace{1mm}
+     McNair Scholar's Program, UC Berkeley, 2013 \\linebreak{} \\vspace{1mm}
+     Phi Theta Kappa All-California Academic Team, 2013 \\linebreak{} \\vspace{1mm}
+     SchoolsFirst Federal Credit Union Scholarship, 2012 \\linebreak{} \\vspace{1mm}
+     WPA National Honor's Recognition in Research, 2012 \\linebreak{} \\vspace{1mm}
+     Scholar's Honors Program, Cerritos College, 2011"
 )
+
+mentor <- tribble(
+  ~accomplishment,
+  "\\textbf{Jaylissa Zheng}, Thesis. Psychology Program (2019-20). Went on to a private Ph.D. Program in Clinical and Positive Psychology \\linebreak{}   
+     \\textbf{Breanna Miscione}, Thesis. Psychology Program (2018-19). Went on to work in Industry. \\linebreak{}
+     \\textbf{Brandon Shalchi}, Thesis. Haas Scholars Program (2017-18). Went on to UC Berkeley's Graduate School of Information \\linebreak{}
+     \\textbf{Sophia Pashtunyar}, Thesis. Psychology Program (2016-18). Went on to UCLA Psychology Ph.D. Program. \\linebreak{}
+     \\textbf{Randy T. Lee}, Psychology Department (2016-17). Went on the Cornell's Psychology Graduate Ph.D. Program. \\linebreak{}
+     \\textbf{Getting into Graduate School} (GiGS) Program Mentor, 2015 \\linebreak{}
+     \\textbf{Mehrnaz Ahrar}, Thesis. Haas Scholars Program (2015). Went on to medical school."
+)
+
+member <- tribble(
+  ~accomplishment,
+  "\\vspace{1mm}Association for Psychological Science (APS)\\linebreak{}\\vspace{1mm}   
+    Society for the Psychological Study of Social Issues (SPSSI)\\linebreak{}\\vspace{1mm}
+    Society for Personality and Social Psychology (SPSP)\\linebreak{}\\vspace{1mm}
+    Western Psychological Association (WPA)\\linebreak{}\\vspace{1mm}
+    R-Ladies\\linebreak{}\\vspace{1mm}
+    Psi Chi Psychology Honor Society\\linebreak{}\\vspace{1mm}
+    Psi Beta Psychology Honor Society"
+)
+
+invite <- tribble(
+  ~accomplishment,
+  "Perez, A.D. \\& Lee, R.T. (2017) Using open source data: Examples from Project Implicit and the General Social Survey. Invited lecture for UC Berkeley Fall 2017 Psychology 167AC Stigma and Prejudice course. Berkeley, CA.",
+  "Transfer Student Panel (2014). Panel member for Cerritos College campus visit to UC Berkeley.",
+  "Psychology Research Methodology Class (2014). Invited lecture given at Cerritos Community College.",
+  "Organization of Mental Health Advocacy Groups (2013). Talk given at Mental Wellness Day: Bridge the Gap to Empowerment Symposium. "
+)
+
+tech <- tribble(
+  ~accomplishment,
+  "\\faIcon{cogs} \\bf{TECHNICAL SKILLS}"
+)
+
+workex <- tribble(
+  ~accomplishment,
+  "\\faIcon{briefcase} \\bf{RELEVANT WORK EXPERIENCE}"
+)
+
+interests <- tribble(
+    ~area,
+    "(1) Causes, Consequences, and Remedies to Implicit and Explicit Racial Biases \\linebreak{}(2) Validation of Implicit Bias Measurement \\linebreak{}(3) Racial Disparities in Education and Health",
+)
+
 
 edu <- tribble(
-    ~degree, ~startYear, ~endYear, ~inst, ~where, ~detail,
-    "Western Governors University", 2020, NA, "Bachelors Data Analytics & Data Management", "Online",NA,
-    "American Council on Education - Statistics.com", 2019, 2019, "Statistics I & II", "Online",NA,
-    "Cosumnes River College", 2012, 2015, "Associate of Art (A.A.) Physical Education Teaching and Coaching", "Sacramento - California", "Phi Theta Kappa Academic Honor Society",
-    "Cosumnes River College", 2012, 2015, "Associate of Science (A.S.) Liberal Arts: Math and Science", "Sacramento - California", "Phi Theta Kappa Academic Honor Society",
-    "San Joaquin Delta College", 2011, 2011, "Pre-Calculus", "Stockton - California",NA,
-    "Galt High School", 2007, 2011, "Diploma", "Galt - California", "AP English Literature",
-    "Galt High School", 2007, 2011, "Diploma", "Galt - California", "AP US Government"
+    ~degree, ~where, ~endYear, ~inst, ~startYear, ~detail,
+    "University of California,Berkeley \\linebreak{}  \\textbf{Dissertation:} iQUAD: The Creation and Validation of a Novel Tool to Measure Implicit Racial Biases and Examine its Predictive Utility", "SU2021", NA, "Ph.D. Social Psychology", "Berkeley, CA","Dissertation: iQUAD: Creation and Validation of a Novel Tool \\linebreak{}to Measure Implicit Racial Biases and Examine its Predictive Utility",
+    "University of California, Berkeley \\linebreak{}  \\textbf{Thesis:}  Examining the Dynamics of Ethnicity and Religion on the Construction of Islamophobia", "2019", NA, "M.A. Psychology", "Berkeley, CA","Thesis: Examining the Dynamics of Ethnicity and Religion on the Construction of Islamophobia",
+    "University of California, Berkeley \\linebreak{}  \\textbf{Honors Thesis:} Fostering Friendships Online to Reduce Prejudice", "2015", NA, "B.A. Psychology", "Berkeley, CA","Honors Thesis: Fostering Friendships Online to Reduce Prejudice",
+    "Cerritos College", "2013", NA, "A.A. Psychology", "Norwalk, CA",NA
 )
 
-work <- tribble(
-    ~title, ~unit, ~startMonth, ~startYear, ~endMonth, ~endYear, ~where, ~detail,
-    "Research Data Analyst II", "California Correctional Health Care Services", "October", 2019, "Present", NA, "Elk Grove - California", "LANGUAGES USED --- HTML, CSS, SASS, JavaScript, R, RMarkdown, SQL, CCL",
-    "Research Data Analyst II", "California Correctional Health Care Services", "October", 2019, "Present", NA, "Elk Grove - California", "Client side Cerner Millenium Database Administrator",
-    "Research Data Analyst II", "California Correctional Health Care Services", "October", 2019, "Present", NA, "Elk Grove - California", "I design and disseminate statistical reports and visualizations written with R and RMarkdown",
-    "Research Data Analyst II", "California Correctional Health Care Services", "October", 2019, "Present", NA, "Elk Grove - California", "I create SQL queries to extract raw data from an enterprise wide data warehouse",
-    "Research Data Analyst II", "California Correctional Health Care Services", "October", 2019, "Present", NA, "Elk Grove - California", "Using (HTML CSS/SASS JavaScript) as well as CCL/SQL,I draft stand alone webpages embedded in our Cerner Millenium medical software",
-    "YouTuber","youtube.com/BryanJenksTech","September",2019,"Present",NA,"Online","LANGUAGES & TOOLS USED --- HTML, CSS, SASS, JavaScript, R, RMarkdown, Bash, Awk, LaTeX, Git, Markdown, VimL",
-    "YouTuber","youtube.com/BryanJenksTech","September",2019,"Present",NA,"Online","I teach a variety of technology related topics ranging from programming languages, setting up development infrastructure, to tutorials for Programming Integrated Development Environments.",
-    "YouTuber","youtube.com/BryanJenksTech","September",2019,"Present",NA,"Online","I also teach about tools for academics such as LaTeX, BibTeX reference management, reference managers, Zettelkasten note taking, The Obsidian Application, and practices for Personal Knowledge Management.",
-    "YouTuber","youtube.com/BryanJenksTech","September",2019,"Present",NA,"Online","My Channel currently has a following of over 140 videos, 3,300 Subscribers, and 156,000 Views",
-    "Open Source Software Developer", "github.com/tallguyjenks", "May", 2019, "Present", NA, "Online", "LANGUAGES USED --- HTML, CSS, SASS, JavaScript, R, RMarkdown, T-SQL, PL-SQL, CCL, VBA, Batch, Bash, Markdown, LaTeX, Groff/Troff",
-    "Owner & Operator", "Norseman Leather Works", "May", 2015, "Present", NA, "Galt - California", "LANGUAGES USED --- R, RMarkdown",
-    "Owner & Operator", "Norseman Leather Works", "May", 2015, "Present", NA, "Galt - California", "Create handmade leather goods for sale through online retail",
-    "Owner & Operator", "Norseman Leather Works", "May", 2015, "Present", NA, "Galt - California", "Analyze Etsy sale csv data files with R and PowerBI to determine marketing and sale strategies",
-    "Owner & Operator", "Norseman Leather Works", "May", 2015, "Present", NA, "Galt - California", "Utilize R Programming to analyze timeseries trends in sales revenue and expenses",
-    "Research Data Specialist I (A)", "California Correctional Health Care Services", "September", 2020, "November", 2020, "Elk Grove - California", "LANGUAGES USED --- HTML, CSS, SASS, JavaScript, R, RMarkdown, SQL, CCL",
-    "Research Data Specialist I (A)", "California Correctional Health Care Services", "September", 2020, "November", 2020, "Elk Grove - California", "Client side Cerner Millenium Database Administrator",
-    "Research Data Specialist I (A)", "California Correctional Health Care Services", "September", 2020, "November", 2020, "Elk Grove - California", "I design and disseminate statistical reports and visualizations written with R and RMarkdown",
-    "Research Data Specialist I (A)", "California Correctional Health Care Services", "September", 2020, "November", 2020, "Elk Grove - California", "I create SQL queries to extract raw data from an enterprise wide data warehouse",
-    "Research Data Specialist I (A)", "California Correctional Health Care Services", "September", 2020, "November", 2020, "Elk Grove - California", "Using (HTML CSS/SASS JavaScript) as well as CCL/SQL,I draft stand alone webpages embedded in our Cerner Millenium medical software",
-    "Associate Governmental Program Analyst", "California Correctional Health Care Services", "November", 2018, "October", 2019, "Elk Grove - California", "LANGUAGES USED --- R, VBA, RMarkdown, HTML, CSS",
-    "Associate Governmental Program Analyst", "California Correctional Health Care Services", "November", 2018, "October", 2019, "Elk Grove - California", "Completed Lean Six Sigma Green Belt Project on the state wide reception center process for inmates entering state custody",
-    "Associate Governmental Program Analyst", "California Correctional Health Care Services", "November", 2018, "October", 2019, "Elk Grove - California", "Created a report that processes over 50,000 medical records daily, that simplifies overdue medical appointment resolution for staff state wide",
-    "Associate Governmental Program Analyst", "California Correctional Health Care Services", "November", 2018, "October", 2019, "Elk Grove - California", "Conducted data literacy and anaylsis training to over 120+ department staff of all levels from Office Assistants to CEOs at 10 remote sites",
-    "Associate Governmental Program Analyst", "California Correctional Health Care Services", "November", 2018, "October", 2019, "Elk Grove - California", "Created automated reports with VBA programming in Excel using programming concepts such as arrays, loops, variables, objects, & API's",
-    "Associate Governmental Program Analyst", "California Correctional Health Care Services", "November", 2018, "October", 2019, "Elk Grove - California", "Region wide subject matter expert in Microsoft Excel",
-    "Staff Services Analyst", "California Correctional Health Care Services", "November", 2016, "November", 2018, "Elk Grove - California", "LANGUAGES USED --- R, VBA, RMarkdown, HTML, CSS",
-    "Staff Services Analyst", "California Correctional Health Care Services", "November", 2016, "November", 2018, "Elk Grove - California", "Conducted data literacy and anaylsis training to over 120+ department staff of all levels from Office Assistants to CEOs at 10 remote sites",
-    "Staff Services Analyst", "California Correctional Health Care Services", "November", 2016, "November", 2018, "Elk Grove - California", "Created automated reports with VBA programming in Excel using programming concepts such as arrays, loops, variables, objects, & API's",
-    "Staff Services Analyst", "California Correctional Health Care Services", "November", 2016, "November", 2018, "Elk Grove - California", "Region wide subject matter expert in Microsoft Excel",
-    "Information Technology Associate (T&D)", "California Correctional Health Care Services", "July", 2018, "September", 2018, "Elk Grove - California", "LANGUAGES USED --- SQL, CCL, VBA",
-    "Information Technology Associate (T&D)", "California Correctional Health Care Services", "July", 2018, "September", 2018, "Elk Grove - California", "Resolved user tickets for the CCHCS Department statewide for issues related to Devices Scheduling and Mental Health Provider builds, and support in relation to the Cerner Millennium Software for the CCHCS EHRS (Electronic Health Record System)",
-    "Information Technology Associate (T&D)", "California Correctional Health Care Services", "July", 2018, "September", 2018, "Elk Grove - California", "Used Database Administrator access to grant user permissions, build and route new resources, clinic lines, and locations within the Cerner Millennium medical software",
-    "Information Technology Associate (T&D)", "California Correctional Health Care Services", "July", 2018, "September", 2018, "Elk Grove - California", "Troubleshoot issues related to Cerner Millennium for end users and stake holders",
-    "Health Program Specialist (A)", "California Correctional Health Care Services", "June", 2018, "July", 2018, "Elk Grove - California", "LANGUAGES USED --- R, VBA, RMarkdown, HTML, CSS",
-    "Health Program Specialist (A)", "California Correctional Health Care Services", "June", 2018, "July", 2018, "Elk Grove - California", "Created a tool to simplify data set cleaning for most Quality Management SQL Server reports for front end staff that is utilized state wide",
-    "Health Program Specialist (A)", "California Correctional Health Care Services", "June", 2018, "July", 2018, "Elk Grove - California", "Conducted data literacy and anaylsis training to over 120+ department staff of all levels from Office Assistants to CEOs at 10 remote sites",
-    "Health Program Specialist (A)", "California Correctional Health Care Services", "June", 2018, "July", 2018, "Elk Grove - California", "Created automated reports with VBA programming in Excel using programming concepts such as arrays, loops, variables, objects, & API's",
-    "Health Program Specialist (A)", "California Correctional Health Care Services", "June", 2018, "July", 2018, "Elk Grove - California", "Region wide subject matter expert in Microsoft Excel",
-    "Office Technician", "California Correctional Health Care Services", "April", 2016, "October", 2016, "Ione - California", "Analyzed Inmate Health Care Appeals and recommended methods of processing while preparing the appeals for review by the Appeal Coordinator",
-    "Office Technician", "California Correctional Health Care Services", "April", 2016, "October", 2016, "Ione - California", "Scheduled and conducted inmate interviews to those with disabilities trouble understanding English and low comprehension to ensure effective communication of their response from the Health Care Appeals Office",
-    "Office Technician", "California Correctional Health Care Services", "April", 2016, "October", 2016, "Ione - California", "Analyzed and interpreted trends in data from several spreadsheets of my design intended to track appeal movement through the institution and support the Health Care Appeals Coordinator in preventing overdue appeals",
-    "Office Technician", "California Correctional Health Care Services", "April", 2016, "October", 2016, "Ione - California", "Utilize the HCARTS system for the creation and tracking of Health Care Appeals in conjunction with various other programs such as SOMS, Inmate Locator, eUHR, and other correctional programs to effectively track and complete timely between 200-400 appeals per month",
-    "Office Assistant", "California Correctional Health Care Services", "September", 2015, "March", 2016, "Ione - California", "Analyzed on average 14,000+ medical documents for completion of signatures of the various stages of processing and routing and submission into the,Health Care Services eUHR Database every month.",
-    "Office Assistant", "California Correctional Health Care Services", "September", 2015, "March", 2016, "Ione - California", "Documents handled such as but not limited to: Mental Health Treatment Plans, Medical Progress Notes 7230, 7362 Request for Medical Services Forms, and Dental Chart update forms.",
-    "Office Assistant", "California Correctional Health Care Services", "September", 2015, "March", 2016, "Ione - California", "Analyzed and tracked trends in mail volume utilizing MS Excel for the Office Services Supervisor I and reported daily logs for their records.",
-    "Office Assistant", "California Correctional Health Care Services", "September", 2015, "March", 2016, "Ione - California", "Managed created and filed various inmate Dental forms into charts for the entire inmate dental program at Mule Creek State Prison."
-)
 
-works <- tribble(
+teaching <- tribble(
     ~area, ~accomplishment, ~year, ~where, ~detail,
-    "Runes", "Convert a string of text characters to Elder Futhark Runes ", "February 2020", "https://github.com/tallguyjenks/runes", "Author and Maintainer",
-    "Runes", "Convert a string of text characters to Elder Futhark Runes ", "February 2020", "https://github.com/tallguyjenks/runes", "Released to CRAN",
+    "Lecturer at UC Berkeley", "Advanced Research & Data Analysis Fall 2020", NA, NA, "Advanced research & data analysis course taught for undergraduate psychology honors students.",
+"Lecturer at UC Berkeley", "Research & Data Analysis Summer 2020", NA, NA, "Research & data analysis course taught for undergraduate psychology students.",         
+    "Adjunct Psychology Professor at Diablo Valley College", "Research Methods in Psychology Spring 2020-Present", NA, NA, "Research methods course for undergraduate psychology students.",
+    "Adjunct Psychology Professor at Diablo Valley College", "Critical Thinking in Psychology Spring 2020-Present", NA, NA, "Critical thinking course for undergraduate psychology students.",
+    )
+
+
+assistant <- tribble(
+    ~area, ~accomplishment, ~year, ~where, ~detail,
+    "Graduate Student Instructor", "Research & Data Analysis Fall 2020", NA, NA, "Research & data analysis course for undergraduate psychology students. Instructor: Dr. Arman Catterson",
+    "Graduate Student Instructor", "Research & Data Analysis Spring 2019", NA, NA, "Research & data analysis course for undergraduate psychology students. Instructor: Dr. Chris Gade",
+    "Instructional Team Member", "Science of Happiness on edx.org Fall 2016 - Fall 2019", NA, NA, "An online MOOC (massive open online course) offered by the Greater Good Science Center via edx.org.",
+    "Graduate Student Instructor", "Psychology of Stigma & Prejudice Fall 2015", NA, NA, "Course on stigma & prejudice for undergraduate students. Instructor: Dr. Rodolfo Mendoza-Denton",
+)
+
+profdev <- tribble(
+  ~area, ~accomplishment,
+  "Intro to R", "\\href{www.google.com}{www.google.com}",
+)
+
+
+prep <- tribble(
+  ~ bib,
+" \\textbf{Perez, A.D.} \\& Okonofua, J. A. (Under Review). The Good and Bad of a Reputation: Race and the Disciplining of Youth.",
+"\\textbf{Perez, A.D.}, \\& Mendoza-Denton, R. (in prep).The Efficacy of Using Individual QUAD Model Parameters in a Linear Model.",
+"\\textbf{Perez, A.D.}, Pashtunyar, S. \\& Mendoza-Denton, R. (in prep). Coloring Islam: Examining the Intersectionality of Ethnicity and Religion on the Construction of Islamoracism and the brown 'other.' ",
+"\\textbf{Perez, A.D.}, Lee, R.T., \\& Mendoza-Denton, R. (in prep). Predictive utility of Project Implicit within a nationally representative sample.",
+)
+
+pub <- tribble(
+    ~ bib,
+    "Okonofua, J.A., \\textbf{Perez, A.D.}, \\& Darling-Hammond, S. (2020). When Policy and Psychology Meet: Mitigating Consequences of Bias in Schools. Science Advances, 6(42). doi: 10.1126/sciadv.aba9479",
+    "\\textbf{Perez, A.D.}, Lee, R.T., \\& Mendoza-Denton, R. (2020). Belonging in schools. In F.C. Worrell \\& T.L. Hughes (Eds.) Cambridge Handbook of Applied School Psychology. New York, NY: Cambridge University Press.",
+    "Lee, R.T., \\textbf{Perez, A.D.}*, Boykin, C.M., \\& Mendoza-Denton, R (2019) On The Prevalence of Racial Discrimination in the United States. PLoS One, 14(1). doi: 10.1271/journal.pone.0210698. \\textit{*Joint 1st Author}",
+    "Mendoza-Denton, R. \\& \\textbf{Perez, A.D.} (2016). Racism and the narrative of biological inevitability. Journal of Othering and Belonging, Expanding the Circle of Human Concern, 1, 43-55."
+)
+
+
+talks <- tribble(
+  ~ bib,
+  "Perez, A.D., Lee, R.T., Leitner, J.B., \\& Mendoza-Denton, R. (2018,
+May). Examining Project Implicit and its usefulness in predicting
+health outcomes. In J. Stone \\& N. Hagiwara (Chairs), Investigating
+the Individual- and Community-Level Relationship Between Implicit
+Bias and Health Outcomes. American Psychological Association
+Annual Conference, San Francisco, CA.",
+"Perez, A.D. \\& Mendoza-Denton, R. (2017) Designing Cross-group
+Friendship Interventions Online. Talk given at the Society for the
+Psychological Study of Social Issues Conference.",
+"Perez, A.D. \\& Mendoza-Denton, R. (2015) Creating an Interactive
+Laboratory for Online Experiments. Poster given at the Society for
+the Psychological Study of Social Issues Conference.",
+"Perez, A.D. \\& Mendoza-Denton, R. (2014) Fostering Friendships Online to
+Reduce Prejudice. Poster given at the UC Berkeley Department of
+Psychology's Honors Symposium.",
+"Perez, A.D. \\& Mendoza-Denton, R. (2013) Coloring Islam: Examining the
+Dynamics of Ethnicity and Religion on the Construction of
+Islamophobia in America. Talk given at the McNair Symposium. ",
+"Perez, A.D. \\& Duff, K. (2013) Exploring the Moderating Effect of Mindset
+on Statistics Performance. Poster given at the Western Psychological
+Association Conference.",
+"Perez, A.D. \\& Duff, K. (2013) The Impact of Religious Stereotypes on
+Person Perception. Poster given at the Western Psychological
+Association Conference.",
+"Perez, A.D. \\& Duff, K. (2012) The Impact of Religious Stereotypes on
+Person Perception. Talk given at the National Conference on
+Undergraduate Research,",
+"Perez, A.D. \\& Duff, K. (2012) Stereotyping Gender Specific Stimuli and
+Person Perception in Children. Talk given at the Southern California
+Conference on Undergraduate Research."
 )

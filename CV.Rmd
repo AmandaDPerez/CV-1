@@ -1,19 +1,24 @@
 ---
-name: Bryan
-surname: Jenks
-position: "Research Data Anaylst II"
-address: "California Correctional Health Care Services (CCHCS)"
-profilepic: "./img/me.jpg"
-www: bryanjenks.xyz
-email: "bryanjenks@protonmail.com"
-github: tallguyjenks
-linkedin: bryanjenks
-orcid: 0000-0002-9604-3069
+name: Amanda Danielle
+surname: Perez
+position: "Researcher and Professor of Psychology"
+profilepic: "./img/me.png"
+www: amandaperez.netlify.app
+email: "adp@berkeley.edu"
 date: "`r format(Sys.time(), '%B %Y')`"
+mobile: 
 headcolor: 990000
-aboutme: "I have been writing production software in a variety of languages for over 3+ years for California Correctional Health Care Services. I have a deep driven passion for software, automation, and data science. This very CV was even compiled with code."
 docname: CV
-output: vitae::awesomecv
+output: 
+  vitae::awesomecv:
+    keep_tex: false
+always_allow_html: yes
+header-includes:
+  \usepackage{multicol}
+  \usepackage{colortbl}
+  \arrayrulecolor{white}
+  \usepackage{hhline}
+  \definecolor{light-gray}{gray}{0.95}
 ---
 
 ```{r setup, include=FALSE}
@@ -27,7 +32,8 @@ packages <- c('vitae'     # The CV's LaTeX Template
              ,'here'      # Relative Filepaths
              ,'readr'     # Data Loading
             )
-
+library(dplyr)
+library(fontawesome)
 # Install packages not yet installed
 installed_packages <- packages %in% rownames(installed.packages())
 if (any(installed_packages == FALSE)) {
@@ -38,26 +44,20 @@ if (any(installed_packages == FALSE)) {
 lapply(packages, library, character.only = TRUE) %>%
   invisible()
 
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
+library(vitae)
+library(ggplot2)
+library(dplyr)
+library(emojifont)
+library(fontawesome)
+
+
 source(file = here("r","data.r"))
 
 ```
 
-# Employment
+# \faIcon{university} Education
 
-```{r EMPLOYMENT}
-
-work %>%
-  detailed_entries(
-    with = title,
-    what = unit,
-    why = detail,
-    when = glue::glue("{startMonth} {startYear} --> {endMonth} {endYear}",.na = ""),
-    where = where
-  )
-
-```
-
-# Education
 
 ```{r EDUCATION}
 
@@ -65,83 +65,159 @@ edu %>%
   detailed_entries(
     with = inst,
     what = degree,
-    why = detail,
-    when = glue::glue("{startYear} --> {endYear}",.na = ""),
-    where = where
+    where = where, .protect = FALSE
   )
 
 ```
 
-# Skills
+
+
+# \faIcon{lightbulb} Research Interests
+
+```{r INTERESTS}
+
+interests %>%
+  detailed_entries(
+    what = area, .protect = FALSE
+       ) 
+
+```
+
+
+# \faIcon{chalkboard-teacher} Academic Appointments
+
+```{r TEACHING}
+
+teaching %>%
+  detailed_entries(
+    with = area,
+    what = accomplishment,
+  )
+
+```
+
+\newpage
+
+# \faIcon{chalkboard} Assistant Teaching Experience
+
+```{r ASSISTANT}
+
+assistant %>%
+  detailed_entries(
+    with = area,
+    what = accomplishment,
+  )
+
+```
+
+# \faIcon{edit} Manuscripts Under Review or in prep
+
+```{r PREP}
+
+prep %>%
+  detailed_entries(
+    what = bib, .protect=FALSE
+  )
+
+```
+
+# \faIcon{file} Publications
+
+```{r PUBLISHED}
+
+pub %>%
+  detailed_entries(
+    what = bib, .protect=FALSE
+  )
+
+```
+
+\newpage
+
+# \faIcon{medal} Distinctions
+
+```{r HONORS}
+
+honors %>%
+  detailed_entries(
+    what = accomplishment, .protect = FALSE
+  )
+
+```
+
+
+# \faIcon{brain} Skills
 
 ```{r SKILLS}
+tech %>%
+  detailed_entries(
+    what = accomplishment, .protect = FALSE
+  )
 
 skills %>%
   detailed_entries(
     with = area,
     what = skills
   )
-
-```
-
-\pagebreak
-
-# Honors
-
-```{r HONORS}
-
-honors %>%
+workex %>%
+  detailed_entries(
+    what = accomplishment, .protect = FALSE
+  )
+workskills %>%
   detailed_entries(
     with = area,
-    what = accomplishment,
-    why = detail,
-    when = year,
-    where = where
+    what = skills
   )
-
 ```
 
-# Projects
+# \faIcon{comments} Conference Presentations
 
-```{r PROJECTS}
+```{r CONFERENCE}
+talks %>%
+  detailed_entries(
+    what = bib, .protect=FALSE
+  )
+```
 
-projects %>%
+
+# \faIcon{users} Mentoring & Advising
+
+```{r, MENTOR}
+mentor %>%
+  detailed_entries(
+    what = accomplishment, .protect = FALSE
+  )
+```
+
+# \faIcon{black-tie} Professional Affiliations
+
+```{r, MEMBER}
+member %>%
+  detailed_entries(
+    what = accomplishment, .protect = FALSE
+  )
+```
+
+# \faIcon{comment-alt} Invited Talks
+
+```{r, TALKS}
+invite %>%
+  detailed_entries(
+    what = accomplishment, .protect = FALSE
+  )
+```
+ 
+\newpage
+ 
+# \faIcon{school} Professional Development
+
+```{r, PROFDEV}
+profdev %>%
   detailed_entries(
     with = area,
-    what = accomplishment,
-    why = detail,
-    when = year,
-    where = where
+    what = accomplishment, .protect = FALSE
   )
-
 ```
 
-# Works
 
-```{r WORKS}
-
-works %>%
-  detailed_entries(
-    with = area,
-    what = accomplishment,
-    why = detail,
-    when = year,
-    where = where
-  )
-
-```
-
-# Certifications
-
-```{r CERTIFICATIONS}
-
-certifications %>%
-  detailed_entries(
-    with = area,
-    what = accomplishment,
-    why = detail,
-    when = year,
-    where = where
-  )
-
-```
+*CV made entirely in R using the vitae package*
