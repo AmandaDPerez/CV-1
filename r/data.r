@@ -86,7 +86,7 @@ interests <- tribble(
 
 edu <- tribble(
     ~degree, ~where, ~endYear, ~inst, ~startYear, ~detail,
-    "University of California,Berkeley \\linebreak{}  \\textbf{Dissertation:} iQUAD: The Creation and Validation of a Novel Tool to Measure Implicit Racial Biases and Examine its Predictive Utility", "SU2021", NA, "Ph.D. Social Psychology", "Berkeley, CA","Dissertation: iQUAD: Creation and Validation of a Novel Tool \\linebreak{}to Measure Implicit Racial Biases and Examine its Predictive Utility",
+    "University of California, Berkeley \\linebreak{}  \\textbf{Dissertation:} iQUAD: The Creation and Validation of a Novel Tool to Measure Implicit Racial Biases and Examine its Predictive Utility", "SU2021", NA, "Ph.D. Social Psychology", "Berkeley, CA","Dissertation: iQUAD: Creation and Validation of a Novel Tool \\linebreak{}to Measure Implicit Racial Biases and Examine its Predictive Utility",
     "University of California, Berkeley \\linebreak{}  \\textbf{Thesis:}  Examining the Dynamics of Ethnicity and Religion on the Construction of Islamophobia", "2019", NA, "M.A. Psychology", "Berkeley, CA","Thesis: Examining the Dynamics of Ethnicity and Religion on the Construction of Islamophobia",
     "University of California, Berkeley \\linebreak{}  \\textbf{Honors Thesis:} Fostering Friendships Online to Reduce Prejudice", "2015", NA, "B.A. Psychology", "Berkeley, CA","Honors Thesis: Fostering Friendships Online to Reduce Prejudice",
     "Cerritos College", "2013", NA, "A.A. Psychology", "Norwalk, CA",NA
