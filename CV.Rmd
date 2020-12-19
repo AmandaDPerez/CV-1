@@ -1,7 +1,7 @@
 ---
 name: Amanda Danielle
 surname: Perez
-position: "Researcher and Professor of Psychology"
+position: "Researcher and Instructor of Psychology"
 profilepic: "./img/me.png"
 www: amandaperez.netlify.app
 email: "adp@berkeley.edu"
