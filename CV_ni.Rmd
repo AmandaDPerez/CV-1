@@ -1,0 +1,224 @@
+---
+name: Amanda Danielle
+surname: Perez
+position: "Researcher and Instructor of Psychology"
+profilepic: ""
+www: amandaperez.netlify.app
+email: "adp@berkeley.edu"
+date: "`r format(Sys.time(), '%B %Y')`"
+mobile: 
+headcolor: 990000
+docname: CV
+output: 
+  vitae::awesomecv:
+    keep_tex: false
+always_allow_html: yes
+header-includes:
+  \usepackage{multicol}
+  \usepackage{colortbl}
+  \arrayrulecolor{white}
+  \usepackage{hhline}
+  \definecolor{light-gray}{gray}{0.95}
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE,
+                      warning = FALSE,
+                      message = FALSE)
+
+packages <- c('vitae'     # The CV's LaTeX Template
+             ,'tibble'    # Data sctructure for tribbles
+             ,'magrittr'  # The Pipe %>%
+             ,'here'      # Relative Filepaths
+             ,'readr'     # Data Loading
+            )
+library(dplyr)
+library(fontawesome)
+# Install packages not yet installed
+installed_packages <- packages %in% rownames(installed.packages())
+if (any(installed_packages == FALSE)) {
+  install.packages(packages[!installed_packages])
+}
+
+# Packages loading
+lapply(packages, library, character.only = TRUE) %>%
+  invisible()
+
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
+library(vitae)
+library(ggplot2)
+library(dplyr)
+library(emojifont)
+library(fontawesome)
+
+
+source(file = here("r","data.r"))
+
+```
+
+# \faIcon{university} Education
+
+
+```{r EDUCATION}
+
+edu %>%
+  detailed_entries(
+    with = inst,
+    what = degree,
+    where = where, .protect = FALSE
+  )
+
+```
+
+
+
+# \faIcon{lightbulb} Research Interests
+
+```{r INTERESTS}
+
+interests %>%
+  detailed_entries(
+    what = area, .protect = FALSE
+       ) 
+
+```
+
+
+# \faIcon{chalkboard-teacher} Academic Appointments
+
+```{r TEACHING}
+
+teaching %>%
+  detailed_entries(
+    with = area,
+    what = accomplishment,
+  )
+
+```
+
+\newpage
+
+# \faIcon{chalkboard} Assistant Teaching Experience
+
+```{r ASSISTANT}
+
+assistant %>%
+  detailed_entries(
+    with = area,
+    what = accomplishment,
+  )
+
+```
+
+# \faIcon{edit} Manuscripts Under Review or in prep
+
+```{r PREP}
+
+prep %>%
+  detailed_entries(
+    what = bib, .protect=FALSE
+  )
+
+```
+
+# \faIcon{file} Publications
+
+```{r PUBLISHED}
+
+pub %>%
+  detailed_entries(
+    what = bib, .protect=FALSE
+  )
+
+```
+
+\newpage
+
+# \faIcon{medal} Distinctions
+
+```{r HONORS}
+
+honors %>%
+  detailed_entries(
+    what = accomplishment, .protect = FALSE
+  )
+
+```
+
+
+# \faIcon{brain} Skills
+
+```{r SKILLS}
+tech %>%
+  detailed_entries(
+    what = accomplishment, .protect = FALSE
+  )
+
+skills %>%
+  detailed_entries(
+    with = area,
+    what = skills
+  )
+workex %>%
+  detailed_entries(
+    what = accomplishment, .protect = FALSE
+  )
+workskills %>%
+  detailed_entries(
+    with = area,
+    what = skills
+  )
+```
+
+# \faIcon{comments} Conference Presentations
+
+```{r CONFERENCE}
+talks %>%
+  detailed_entries(
+    what = bib, .protect=FALSE
+  )
+```
+
+
+# \faIcon{users} Mentoring & Advising
+
+```{r, MENTOR}
+mentor %>%
+  detailed_entries(
+    what = accomplishment, .protect = FALSE
+  )
+```
+
+# \faIcon{black-tie} Professional Affiliations
+
+```{r, MEMBER}
+member %>%
+  detailed_entries(
+    what = accomplishment, .protect = FALSE
+  )
+```
+
+# \faIcon{comment-alt} Invited Talks
+
+```{r, TALKS}
+invite %>%
+  detailed_entries(
+    what = accomplishment, .protect = FALSE
+  )
+```
+ 
+\newpage
+ 
+# \faIcon{school} Professional Development
+
+```{r, PROFDEV}
+profdev %>%
+  detailed_entries(
+    with = area,
+    what = accomplishment, .protect = FALSE
+  )
+```
+
+
+
+*CV made entirely in R using the vitae package*
