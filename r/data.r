@@ -86,7 +86,7 @@ interests <- tribble(
 
 edu <- tribble(
     ~degree, ~where, ~endYear, ~inst, ~startYear, ~detail,
-    "University of California, Berkeley \\linebreak{}  \\textbf{Dissertation:} iQUAD: The Creation and Validation of a Novel Tool to Measure Implicit Racial Biases and Examine its Predictive Utility", "SU2021", NA, "Ph.D. Social Psychology", "Berkeley, CA","Dissertation: iQUAD: Creation and Validation of a Novel Tool \\linebreak{}to Measure Implicit Racial Biases and Examine its Predictive Utility",
+    "University of California, Berkeley \\linebreak{}  \\textbf{Dissertation:} iQUAD: The Creation and Validation of a Novel Tool to Measure Implicit Racial Biases and Examine its Predictive Utility", "SP2021", NA, "Ph.D. Social Psychology", "Berkeley, CA","Dissertation: iQUAD: Creation and Validation of a Novel Tool \\linebreak{}to Measure Implicit Racial Biases and Examine its Predictive Utility",
     "University of California, Berkeley \\linebreak{}  \\textbf{Thesis:}  Examining the Dynamics of Ethnicity and Religion on the Construction of Islamophobia", "2019", NA, "M.A. Psychology", "Berkeley, CA","Thesis: Examining the Dynamics of Ethnicity and Religion on the Construction of Islamophobia",
     "University of California, Berkeley \\linebreak{}  \\textbf{Honors Thesis:} Fostering Friendships Online to Reduce Prejudice", "2015", NA, "B.A. Psychology", "Berkeley, CA","Honors Thesis: Fostering Friendships Online to Reduce Prejudice",
     "Cerritos College", "2013", NA, "A.A. Psychology", "Norwalk, CA",NA
@@ -95,15 +95,16 @@ edu <- tribble(
 
 teaching <- tribble(
     ~area, ~accomplishment, ~year, ~where, ~detail,
-    "Lecturer at UC Berkeley", "Advanced Research & Data Analysis Fall 2020", NA, NA, "Advanced research & data analysis course taught for undergraduate psychology honors students.",
-"Lecturer at UC Berkeley", "Research & Data Analysis Summer 2020", NA, NA, "Research & data analysis course taught for undergraduate psychology students.",         
     "Adjunct Psychology Professor at Diablo Valley College", "Research Methods in Psychology Spring 2020-Present", NA, NA, "Research methods course for undergraduate psychology students.",
     "Adjunct Psychology Professor at Diablo Valley College", "Critical Thinking in Psychology Spring 2020-Present", NA, NA, "Critical thinking course for undergraduate psychology students.",
+"Lecturer at UC Berkeley", "Advanced Research & Data Analysis Fall 2020", NA, NA, "Advanced research & data analysis course taught for undergraduate psychology honors students.",
+"Lecturer at UC Berkeley", "Research & Data Analysis Summer 2020", NA, NA, "Research & data analysis course taught for undergraduate psychology students.",  
     )
 
 
 assistant <- tribble(
     ~area, ~accomplishment, ~year, ~where, ~detail,
+    "Graduate Student Instructor", "Introduction to Psychology Spring 2021", NA, NA, "Online introductory course for undergraduate students. Instructor: Dr. Chris Gade",
     "Graduate Student Instructor", "Research & Data Analysis Fall 2020", NA, NA, "Research & data analysis course for undergraduate psychology students. Instructor: Dr. Arman Catterson",
     "Graduate Student Instructor", "Research & Data Analysis Spring 2019", NA, NA, "Research & data analysis course for undergraduate psychology students. Instructor: Dr. Chris Gade",
     "Instructional Team Member", "Science of Happiness on edx.org Fall 2016 - Fall 2019", NA, NA, "An online MOOC (massive open online course) offered by the Greater Good Science Center via edx.org.",
